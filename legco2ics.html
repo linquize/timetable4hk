@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Legco JSON to ICS</title>
+    <script type="text/javascript" src="ical.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  </head>
+  <body>
+    <script>
+    </script>
+    <div>
+      <button id="btn-get" style="margin: 0px 20px 0px 0px">Get from Legco</button>
+      <button id="btn-convert">Convert to ICS</button>
+      <input id="chk-chi" type="checkbox">Chinese
+    </div>
+    <div style="border: 1px dotted">JSON: <br><textarea id="json" style="width: 90%" rows="7"></textarea></div>
+    <div style="border: 1px dotted">ICS: <br><textarea id="ics" style="width: 90%" rows="23"></textarea></div>
+    <script type="text/javascript">
+      ICAL.foldLength = 1024; // set larger text-wrapping threshold
+
+      function legcoJson2ics(obj, chi) {
+        var vcalendar = new ICAL.Component("vcalendar");
+        for (var i = 0; i < obj.value.length; i++) {
+          var meet = obj.value[i];
+          var vevent = new ICAL.Event();
+          vevent.summary = chi ? meet.subject_chi : meet.subject_eng;
+          vevent.startDate = ICAL.Time.fromDateString(meet.start_date_time);
+          vevent.component.addPropertyWithValue("url", chi ? meet.agenda_url_chi : meet.agenda_url_eng);
+          vcalendar.addSubcomponent(vevent.component);
+        }
+        var arr = ["icalendar", vcalendar.jCal];
+        var ics = ICAL.stringify(arr);
+        return ics;
+      }
+
+      $("#btn-get").click(function() {
+        $.ajax({url: "/redir/http://app.legco.gov.hk/ScheduleDB/odata/Tmeeting", type: "GET", dataType: "text",
+          success: function(msg){
+            $("#json").text(msg);
+          }
+        });
+      });
+
+      $("#btn-convert").click(function() {
+        var obj = JSON.parse($("#json").text());
+        var chi = $("#chk-chi").is(':checked');
+        $("#ics").text(legcoJson2ics(obj, chi));
+      });
+    </script>
+    <div>Source of data: <a href="http://www.legco.gov.hk/odata/english/schedule-db.html">Legislative Council - Open data of the Meeting Schedule</a></div>
+  </body>
+</html>

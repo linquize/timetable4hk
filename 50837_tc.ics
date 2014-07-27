@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+PRODID:-//Ben Fortuna//iCal4j 1.0//EN
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20140724T025012Z
+UID:50837@ogcef.one.gov.hk
+STATUS:CONFIRMED
+SEQUENCE:12
+DTSTART;VALUE=DATE:20130720
+DTEND;VALUE=DATE:20180721
+GEO:22.377370;114.185300
+CATEGORIES:4,6
+X-SOURCE;X-ID=lcsdct:康樂及文化事務署
+DESCRIPTION:李小龍自信不凡的性格與中西文化交融的個人背景交織成他的傳奇人生。展覽將為大家帶來超過六百多件珍貴的文物，讓大家可以全面地、
+ 立體地、自主地從他的個人、電影、功夫、文化現象等多方面，對他作深入了解。
+X-DT-DESC:2013年7月20日 至 2018年7月20日
+LOCATION;X-ID=6:香港文化博物館
+ORGANIZER;CN="康樂及文化事務署主辦 李小龍基金會與香港文化博物館聯合籌劃 星空華文傳媒電影有限公司贊助":mailto:empty
+X-PRICE-DESC:博物館入場費： $10
+X-REMARK:博物館通行證持有人及4歲以下小童免費入場
+SUMMARY:武‧藝‧人生 ─ 李小龍
+URL:http://www.heritagemuseum.gov.hk/chi/exhibitions/exhibition_details.a
+ spx?exid=209
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,72 @@
+BEGIN:VCALENDAR
+PRODID:-//Ben Fortuna//iCal4j 1.0//EN
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20140626T081406Z
+UID:124527@ogcef.one.gov.hk
+STATUS:CONFIRMED
+SEQUENCE:0
+CONTACT;X-TYPE=tel:2739 2139 / 2734 2900
+DTSTART;VALUE=DATE:20140802
+DTEND;VALUE=DATE:20140803
+X-ENROL-START;VALUE=DATE:20140702
+GEO:22.285056;114.222075
+CATEGORIES:2
+X-SOURCE;X-ID=lcsdct:Leisure and Cultural Services Department
+DESCRIPTION:Ma the flying bandit (Yan Jun) calls it quits after his daugh
+ ter is born. His wife (Bai Guang)\, a one-time prostitute\, can’t stand 
+ poverty and rats on him before resuming her profession. Years later\, wh
+ en the daughter is set to get married\, the unabashed mother blackmails 
+ her own flesh and blood\, so Ma has to escape from prison to thwart her.
+  Yue Feng forwent social critique to focus on the drama itself\, creatin
+ g for the Chinese audience an intense tale of love and hate reminiscent 
+ of American film noir. Screen goddess Bai Guang’s portrayal of a thoroug
+ hly bad woman\, a rarity in Chinese cinema\, becomes a persona that live
+ s forever.
+X-DT-DESC:2 Aug 2014 (Sat) 7:00pm
+X-DUR-DESC:90min
+X-ENROL-URL:http://www.lcsd.gov.hk/CE/Entertainment/Ticket/index.html
+LOCATION;X-ID=29:Hong Kong Film Archive (Cinema)
+ORGANIZER;CN=Presented by Leisure and Cultural Services Department:mailto
+ :empty
+X-PRICE-DESC:$40
+X-REMARK:With post-screening talk
+SUMMARY:"Blood Will Tell" - 100 Must-See Hong Kong Movies
+URL:http://www.lcsd.gov.hk/CE/CulturalService/filmprog/english/2011ms100/
+ 2011ms100_film78.html
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20140626T081407Z
+UID:124527@ogcef.one.gov.hk
+STATUS:CONFIRMED
+SEQUENCE:0
+CONTACT;X-TYPE=tel:2739 2139 / 2734 2900
+DTSTART;VALUE=DATE:20140805
+DTEND;VALUE=DATE:20140806
+X-ENROL-START;VALUE=DATE:20140702
+GEO:22.285056;114.222075
+CATEGORIES:2
+X-SOURCE;X-ID=lcsdct:Leisure and Cultural Services Department
+DESCRIPTION:Ma the flying bandit (Yan Jun) calls it quits after his daugh
+ ter is born. His wife (Bai Guang)\, a one-time prostitute\, can’t stand 
+ poverty and rats on him before resuming her profession. Years later\, wh
+ en the daughter is set to get married\, the unabashed mother blackmails 
+ her own flesh and blood\, so Ma has to escape from prison to thwart her.
+  Yue Feng forwent social critique to focus on the drama itself\, creatin
+ g for the Chinese audience an intense tale of love and hate reminiscent 
+ of American film noir. Screen goddess Bai Guang’s portrayal of a thoroug
+ hly bad woman\, a rarity in Chinese cinema\, becomes a persona that live
+ s forever.
+X-DT-DESC:2 Aug 2014 (Sat) 7:00pm
+X-DUR-DESC:90min
+X-ENROL-URL:http://www.lcsd.gov.hk/CE/Entertainment/Ticket/index.html
+LOCATION;X-ID=29:Hong Kong Film Archive (Cinema)
+ORGANIZER;CN=Presented by Leisure and Cultural Services Department:mailto
+ :empty
+X-PRICE-DESC:$40
+X-REMARK:With post-screening talk
+SUMMARY:"979" - 100 Must-See Hong Kong Movies
+URL:http://www.lcsd.gov.hk/CE/CulturalService/filmprog/english/2011ms100/
+ 2011ms100_film78.html
+END:VEVENT
+END:VCALENDAR
