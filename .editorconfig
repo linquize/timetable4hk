@@ -1,0 +1,11 @@
+; See http://editorconfig.org/ for more informations
+; Top-most EditorConfig file
+root = true
+
+[*.html]
+indent_style = space
+indent_size = 2
+
+[proxy.node.js]
+indent_style = space
+indent_size = 2

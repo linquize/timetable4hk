@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EventHK to ICS</title>
+    <script type="text/javascript" src="ical.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  </head>
+  <body>
+    <script>
+    </script>
+    <div>
+      Date: (YYYYMMDD)<input id="txt-date" type="text">
+      <button id="btn-get" style="margin: 0px 20px 0px 0px">Get from Data.One</button>
+      <input id="chk-chi" type="checkbox">Chinese
+    </div>
+    <div style="border: 1px dotted">Links: <br><div id="links" style="height: 200px;overflow:auto"></div></div>
+    <div style="border: 1px dotted">ICS: <br><textarea id="ics" style="width: 90%" rows="20"></textarea></div>
+    <script type="text/javascript">
+      ICAL.foldLength = 1024; // set larger text-wrapping threshold
+
+      function legcoJson2ics(obj, chi) {
+        var vcalendar = new ICAL.Component("vcalendar");
+        for (var i = 0; i < obj.value.length; i++) {
+          var meet = obj.value[i];
+          var vevent = new ICAL.Event();
+          vevent.summary = chi ? meet.subject_chi : meet.subject_eng;
+          vevent.startDate = ICAL.Time.fromDateString(meet.start_date_time);
+          vevent.component.addPropertyWithValue("url", chi ? meet.agenda_url_chi : meet.agenda_url_eng);
+          vcalendar.addSubcomponent(vevent.component);
+        }
+        var arr = ["icalendar", vcalendar.jCal];
+        var ics = ICAL.stringify(arr);
+        return ics;
+      }
+
+      $("#btn-get").click(function() {
+        $("#links").text("");
+        var url = "/redir/http://ogcef.one.gov.hk/event-psi/json/calendar/" + $("#txt-date").val() + ".json";
+        $.getJSON(url, function(result) {
+          $("#links").html("Count: " + result.length + "<br>");
+          for (var i = 0; i < result.length; i++) {
+            var btn = document.createElement("button");
+            btn.innerHTML = result[i][1];
+            btn.onclick = function() {
+              $("#ics").text("");
+              var chi = $("#chk-chi").is(':checked');
+              var urld = "/redir/http://ogcef.one.gov.hk/event-psi/psi/" + this.innerHTML + "_" + (chi ? "tc" : "en") + ".ics";
+              $.get(urld, function(resultd) {
+                $("#ics").text(resultd);
+              });
+            };
+            $("#links").append(btn);
+          }
+        });
+      });
+    </script>
+    <div>Source of data: <a href="http://www.gov.hk/tc/theme/psi/datasets/eventhklist.htm">GovHK: List of EventHK information</a></div>
+  </body>
+</html>
