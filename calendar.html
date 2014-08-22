@@ -20,13 +20,35 @@
         for (var i = 0; i < vevents.length; i++) {
           var vevent = new ICAL.Event(vevents[i]);
           var purl = vevent.component.getFirstProperty("url");
-          var obj = {
-            title: vevent.summary,
-            start: vevent.startDate.toString(),
-            end: vevent.endDate ? vevent.endDate.toString() : null,
-            url: purl ? purl.getFirstValue() : null,
-          };
-          arr[arr.length] = obj;
+          if (vevent.isRecurring()) {
+            var pduration = vevent.component.getFirstProperty("duration");
+            var vduration = pduration ? pduration.getFirstValue() : null;
+            var it = vevent.iterator();
+            for (var d = it.next(); d; d = it.next()) {
+              var endTimeStr = null;
+              if (vduration) {
+                var endTime = d.clone();
+                endTime.addDuration(vduration);
+                endTimeStr = endTime.toString();
+              }
+              var obj2 = {
+                title: vevent.summary,
+                start: d.toString(),
+                end: endTimeStr,
+                url: purl ? purl.getFirstValue() : null,
+              };
+              arr[arr.length] = obj2;
+            }
+          }
+          else {
+            var obj = {
+              title: vevent.summary,
+              start: vevent.startDate.toString(),
+              end: vevent.endDate ? vevent.endDate.toString() : null,
+              url: purl ? purl.getFirstValue() : null,
+            };
+            arr[arr.length] = obj;
+          }
         }
       }
 
