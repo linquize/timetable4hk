@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+PRODID:-//Ben Fortuna//iCal4j 1.0//EN
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20140715T091802Z
+UID:128793@ogcef.one.gov.hk
+STATUS:CONFIRMED
+SEQUENCE:0
+CONTACT;X-TYPE=email:kpl@lcsd.gov.hk
+CONTACT;X-TYPE=tel:2926 5044
+DTSTART;VALUE=DATE:20140824
+DTEND;VALUE=DATE:20140825
+GEO:22.318503;114.176075
+CATEGORIES:4
+X-SOURCE;X-ID=lcsdct:康樂及文化事務署
+X-DT-DESC:24/8/2014 (日) 10:30-11:30
+LOCATION;X-ID=51:九龍公共圖書館
+ORGANIZER;CN="康樂及文化事務署‧香港公共圖書館主辦":mailto:empty
+SUMMARY:兒童及青少年閱讀計劃 「月月讀書樂月會」–「學好正字」(初中及高中組)
+URL:http://www.hkpl.gov.hk/tc/extension-activities/all-events/search?lib_
+ id=998
+END:VEVENT
+END:VCALENDAR

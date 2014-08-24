@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+PRODID:-//Ben Fortuna//iCal4j 1.0//EN
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20140707T071938Z
+UID:126109@ogcef.one.gov.hk
+STATUS:CONFIRMED
+SEQUENCE:0
+CONTACT;X-TYPE=tel:2734 2900 / 2739 2139
+DTSTART;VALUE=DATE:20140824
+DTEND;VALUE=DATE:20140825
+X-ENROL-START;VALUE=DATE:20140723
+GEO:22.285056;114.222075
+CATEGORIES:2
+X-SOURCE;X-ID=lcsdct:康樂及文化事務署
+DESCRIPTION:在現可見的岳楓作品中，論共產主義意識之強，以此片為極至。內戰末期，嚴俊和陳娟娟飾演的情侶從混亂的內地逃到香港，香港竟是欺詐
+ 壓迫更烈的社會，上海來的富人繼續作威作福，而窮難民都淪落為男盜女娼。廣州解放了，這對情侶和同住籠屋的窮伙伴們坐上北歸的火車。技藝方面，的確是岳氏
+ 一部佳作。街頭巷尾、大排檔、籠屋，置景精準，影像流動而節制，捕捉企街女郎等各色人物，粵曲粵語、上海話、四川話，此起彼落，用寫實豐富的影像塑造難民
+ 社會的面貌。影片標榜這些「南國風情畫」，卻又宣傳「一朝覺醒，不如歸去」，為新中國搖旗吶喊，促請難民回歸祖國，則反映其時左派 電影中商業賣點和政治
+ 任務的矛盾共存。岳楓為變紅的長城公司拍此片時，他和大多數參與人員都是南來雁，後來多長留在這殖民地小島。
+X-DT-DESC:2014年8月24日 (日) 下午1:30
+X-DUR-DESC:128 分鐘
+X-ENROL-URL:http://www.lcsd.gov.hk/CE/Entertainment/Ticket/indexc.html
+LOCATION;X-ID=29:香港電影資料館 (電影院)
+ORGANIZER;CN="康樂及文化事務署主辦":mailto:empty
+X-PRICE-DESC:$40
+SUMMARY:《南來雁》－ 〈編+導〉回顧系列二：岳楓
+URL:http://www2.lcsd.gov.hk/cf/search/culture/details.cfm?lang=b5&id=4207
+ 3
+END:VEVENT
+END:VCALENDAR

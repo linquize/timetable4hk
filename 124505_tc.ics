@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+PRODID:-//Ben Fortuna//iCal4j 1.0//EN
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20140626T081606Z
+UID:124505@ogcef.one.gov.hk
+STATUS:CONFIRMED
+SEQUENCE:0
+CONTACT;X-TYPE=tel:2388 0002
+DTSTART;VALUE=DATE:20140824
+DTEND;VALUE=DATE:20140825
+X-ENROL-START;VALUE=DATE:20140702
+GEO:22.310746;114.168736
+CATEGORIES:2
+X-SOURCE;X-ID=lcsdct:康樂及文化事務署
+DESCRIPTION:南國影業有限公司創業作，標榜嚴謹認真的製作，盡顯南下影人冀望革新同期粵語片的雄心。故事取材解放前珠江一帶普遍的農村生態，低
+ 層農民在抗戰勝利後，仍受地主官員勾結的腐敗制度欺壓，一對小夫妻被逼出走省城，卻歷盡坎坷，從他倆的悲慘遭遇延伸封建的政治大環境，吐盡當時的生活苦況
+ 。電影充滿濃厚廣東地方色彩，從鄉間務農、城區阡陌、碼頭苦力，至賣唱盲女、獅鼓習俗、傳統思想，忠實描繪人民質樸的精神面貌，考究各種細節，充滿社會寫
+ 實主義的風格。實景拍攝也拍得甚有氣魄，尤其結局一場珠江邊的大混鬥，場面豐富，剪接凌厲出色。夫妻最後泛舟珠江，回鄉解放，為戰後的城鄉矛盾寫下���史的
+ 一章。
+X-DT-DESC:2014年8月24日 (日) 下午2:00
+X-DUR-DESC:107分鐘
+X-ENROL-URL:http://www.cinema.com.hk
+LOCATION;X-ID=44:百老匯電影中心
+ORGANIZER;CN="康樂及文化事務署主辦":mailto:empty
+X-PRICE-DESC:$60
+SUMMARY:《珠江淚》 － 百部不可不看的香港電影
+URL:http://www.lcsd.gov.hk/CE/CulturalService/filmprog/chinese/2011ms100/
+ 2011ms100_film79.html
+END:VEVENT
+END:VCALENDAR
